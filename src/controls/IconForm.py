@@ -2,6 +2,9 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QIcon
 
+'''
+setWindowIcon方法用于设置窗口图标，只在windows下有用
+'''
 
 class IconForm(QMainWindow):
     def __init__(self, parent=None):

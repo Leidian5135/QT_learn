@@ -69,6 +69,7 @@ class QMessageBoxDemo(QWidget):
             QMessageBox.critical(self, '警告', '这是一个警告对话框', QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
         elif text == '显示提问对话框':
             QMessageBox.question(self, '警告', '这是一个警告对话框', QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
+        
 
 
 if __name__ == '__main__':

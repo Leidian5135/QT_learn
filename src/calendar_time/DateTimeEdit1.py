@@ -23,6 +23,7 @@ class DateTimeEdit(QWidget):
         self.dateTimeEdit = dateTimeEdit1
         dateTimeEdit2.setCalendarPopup(True)
 
+        #显示当前日期
         dateEdit = QDateTimeEdit(QDate.currentDate())
         timeEdit = QDateTimeEdit(QTime.currentTime())
 

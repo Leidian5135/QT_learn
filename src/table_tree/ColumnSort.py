@@ -16,7 +16,7 @@ from PyQt5.QtCore import *
 
 class ColumnSort(QWidget):
     def __init__(self):
-        super(ColumnSort,self).__init__()
+        super(ColumnSort, self).__init__()
         self.initUI()
 
     def initUI(self):
@@ -28,16 +28,16 @@ class ColumnSort(QWidget):
         self.tableWidget.setColumnCount(3)
         layout.addWidget(self.tableWidget)
 
-        self.tableWidget.setHorizontalHeaderLabels(['姓名', '性别', '体重(kg)'])
+        self.tableWidget.setHorizontalHeaderLabels(['姓名', '性别', '身高'])
 
         newItem = QTableWidgetItem('张三')
-        self.tableWidget.setItem(0,0,newItem)
+        self.tableWidget.setItem(0, 0, newItem)
 
-        newItem=QTableWidgetItem('男')
-        self.tableWidget.setItem(0,1,newItem)
+        newItem = QTableWidgetItem('男')
+        self.tableWidget.setItem(0, 1, newItem)
 
-        newItem=QTableWidgetItem('165')
-        self.tableWidget.setItem(0,2,newItem)
+        newItem = QTableWidgetItem('165')
+        self.tableWidget.setItem(0, 2, newItem)
 
         newItem = QTableWidgetItem('李四')
         self.tableWidget.setItem(1, 0, newItem)
@@ -64,13 +64,14 @@ class ColumnSort(QWidget):
         self.orderType = Qt.DescendingOrder
         self.setLayout(layout)
 
-
     def order(self):
         if self.orderType == Qt.DescendingOrder:
             self.orderType = Qt.AscendingOrder
         else:
             self.orderType = Qt.DescendingOrder
-        self.tableWidget.sortItems(2,self.orderType)
+        self.tableWidget.sortItems(2, self.orderType)
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     example = ColumnSort()

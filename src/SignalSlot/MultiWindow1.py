@@ -10,6 +10,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from DateDialog import DateDialog
 
+
 class MultiWindow1(QWidget):
     def __init__(self):
         super().__init__()

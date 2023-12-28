@@ -1,6 +1,9 @@
 '''
 信号与槽自动连接
 
+on_objectname_signalname
+
+on_okButton_clicked
 '''
 
 from PyQt5 import QtCore
